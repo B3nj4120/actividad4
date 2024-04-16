@@ -1,0 +1,106 @@
+.body{
+    background-color: aqua;
+}
+/* Contenedor de cómics */
+.comics-container {
+    display: flex; /* Utiliza Flexbox */
+    flex-wrap: wrap; /* Permite que los cómics se envuelvan cuando no haya suficiente espacio */
+    justify-content: center; /* Centra los cómics horizontalmente */
+}
+
+.comic {
+    width: calc(25% - 20px); /* Establece el ancho de cada cómic al 25% del contenedor menos el espacio entre ellos */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px; /* Espacio entre los cómics */
+    text-align: center; /* Centra el contenido dentro de cada cómic */
+    float: left; /* Hace que los cómics floten hacia la izquierda */
+}
+/* Limpia los flotadores después de los cómics */
+.comics-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Estilos para las imágenes de los cómics */
+.comic img {
+    max-width: 100%; /* La imagen se ajustará al ancho del contenedor del cómic */
+    height: auto; /* Mantenemos la relación de aspecto de la imagen */
+    border-radius: 5px; /* Redondea los bordes de la imagen */
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* El menú ocupa todo el espacio restante */
+}
+
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.colum{
+     width: 80%;
+     height: 50rem;
+     display: flex;
+     flex-direction: column;
+}
+.lolo-container {
+    display: flex; /* Utiliza Flexbox */
+    flex-wrap: wrap; /* Permite que los cómics se envuelvan cuando no haya suficiente espacio */
+    justify-content: center; /* Centra los cómics horizontalmente */
+}
+.lolo {
+    width: calc(25% - 20px); /* Establece el ancho de cada cómic al 25% del contenedor menos el espacio entre ellos */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px; /* Espacio entre los cómics */
+    text-align: center; /* Centra el contenido dentro de cada cómic */
+    float: left; /* Hace que los cómics floten hacia la izquierda */
+}
+/* Limpia los flotadores después de los cómics */
+.lolo-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Estilos para las imágenes de los cómics */
+.lolo img {
+    max-width: 100%; /* La imagen se ajustará al ancho del contenedor del cómic */
+    height: auto; /* Mantenemos la relación de aspecto de la imagen */
+    border-radius: 5px; /* Redondea los bordes de la imagen */
+}
